@@ -1,0 +1,33 @@
+name: Bug or idea
+description: Report a problem or suggest an improvement for Remote Universal for All TV.
+labels: ["beta"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - Bug
+        - Idea / suggestion
+        - Text or translation problem
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, or what would you like?
+      description: For bugs, the steps to reproduce and what you expected.
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model and Android version
+  - type: input
+    id: tv
+    attributes:
+      label: TV brand and model (if relevant)
+  - type: input
+    id: lang
+    attributes:
+      label: App language (if a text problem)

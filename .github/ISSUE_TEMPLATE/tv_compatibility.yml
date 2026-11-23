@@ -1,0 +1,74 @@
+name: TV compatibility report
+description: Tell us how Remote Universal for All TV works with your TV (beta testers).
+title: "[TV] <brand> <model> - "
+labels: ["tv-report", "beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing! Please do not include personal information (no IP addresses, account names or photos of people).
+  - type: input
+    id: tv
+    attributes:
+      label: TV brand and model
+      description: Usually on a sticker on the back, or in the TV's Settings > About. Example "TCL 65QM8", "Samsung UN55TU7000".
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: TV system
+      options:
+        - Google TV / Android TV
+        - Samsung (Tizen)
+        - LG (webOS)
+        - Vizio SmartCast
+        - Sony BRAVIA
+        - Other / not sure
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: TV year (approximate)
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model and Android version
+      description: Example "Pixel 7, Android 15"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Settings > About in the app
+  - type: checkboxes
+    id: worked
+    attributes:
+      label: What worked?
+      options:
+        - label: The app found my TV automatically
+        - label: Pairing / connecting
+        - label: D-pad, OK, Back, Home
+        - label: Volume / mute / channels
+        - label: Power off
+        - label: Touchpad
+        - label: Number pad
+        - label: App row (opening Netflix, YouTube, ...)
+        - label: Keyboard text entry
+        - label: Voice / microphone
+        - label: Casting photos / video
+  - type: textarea
+    id: problems
+    attributes:
+      label: What did not work, or felt wrong?
+      description: Steps to reproduce help a lot.
+  - type: dropdown
+    id: rating
+    attributes:
+      label: Overall, would you use it as your daily remote?
+      options:
+        - "Yes"
+        - Maybe, after fixes
+        - "No"

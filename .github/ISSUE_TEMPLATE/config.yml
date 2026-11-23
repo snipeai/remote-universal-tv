@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Beta testing instructions
+    url: https://snipeai.github.io/remote-universal-tv/testing.html
+    about: How to join the closed beta and what to test.
+  - name: Email the developer
+    url: mailto:hanekdevolpes@gmail.com
+    about: Prefer email? Include your phone model and TV model.
